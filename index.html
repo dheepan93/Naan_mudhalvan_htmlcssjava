@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Sales</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .car-container {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .car-card {
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 10px;
+      width: 200px;
+      text-align: center;
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    .car-card button {
+      padding: 8px 16px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .car-card button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Car Sales</h1>
+
+  <div class="car-container">
+    <div class="car-card">
+      <img src="Bmw.jpg" alt="Car 1">
+      <h3>BMW 3 Series</h3>
+      <p>$35,000</p>
+      <button onclick="showDetails('BMW 3 Series')">View Details</button>
+    </div>
+
+    <div class="car-card">
+      <img src="Audi.webp" alt="Car 2">
+      <h3>Audi A4</h3>
+      <p>$38,000</p>
+      <button onclick="showDetails('Audi A4')">View Details</button>
+    </div>
+    
+    <div class="car-card">
+      <img src="Tesla.jpg" alt="Car 3">
+      <h3>Tesla Model 3</h3>
+      <p>$45,000</p>
+      <button onclick="showDetails('Tesla Model 3')">View Details</button>
+    </div>
+  </div>
+
+  <script>
+    function showDetails(car) {
+      alert("You clicked on " + car);
+    }
+  </script>
+
+</body>
+</html>
